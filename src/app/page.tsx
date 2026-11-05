@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { DragDropContext, Droppable, Draggable, DropResult } from "@hello-pangea/dnd";
 import { supabase } from "@/lib/supabase";
 import { cn } from "@/lib/utils";
-import { Plus, MoreHorizontal, GripVertical } from "lucide-react";
+import { Plus, GripVertical } from "lucide-react";
 
 type Task = { id: string; column_id: string; content: string; position: number };
 type Column = { id: string; title: string; position: number; tasks: Task[] };
